@@ -2,43 +2,76 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Entreprise MESSANGA</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
-    <h1>Bienvenue chez Entreprise MESSANGA</h1>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Entreprise MESSANGA</h1>
+      <nav>
+        <button class="burger" id="burger">&#9776;</button>
+        <ul id="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#carousel">Réalisations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="services">
-      <h2>Nos Services</h2>
-      <div class="service">
-        <h3>Développement Web</h3>
-        <p>Création de sites vitrines et e-commerce modernes.</p>
+    <section id="hero">
+      <div class="container">
+        <h2>Bienvenue chez Entreprise MESSANGA</h2>
+        <p>Nous vous accompagnons dans votre transition numérique avec des solutions modernes et efficaces.</p>
       </div>
-      <div class="service">
-        <h3>Conseil numérique</h3>
-        <p>Accompagnement à la transformation digitale.</p>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Nos Services</h2>
+        <div class="service-grid">
+          <div class="service">
+            <h3>Développement Web</h3>
+            <p>Sites vitrines, e-commerce, applications web responsives.</p>
+          </div>
+          <div class="service">
+            <h3>Conseil numérique</h3>
+            <p>Transformation digitale, audit technologique, stratégie IT.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="carousel">
+      <div class="container">
+        <h2>Nos Réalisations</h2>
+        <div class="carousel">
+          <img src="https://images.unsplash.com/photo-1581091012184-7f13dcfb90b7" alt="Développement Web" class="carousel-image active">
+          <img src="https://images.unsplash.com/photo-1581090700227-1e8a3c9ff7b3" alt="Conseil numérique" class="carousel-image">
+          <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769" alt="Technologie" class="carousel-image">
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contactez-nous</h2>
-      <p>Email : contact@entreprise-messanga.com</p>
-      <p>Téléphone : +237 6 73 59 44 89</p>
+      <div class="container">
+        <h2>Contactez-nous</h2>
+        <p>Email : <a href="mailto:contact@entreprise-messanga.com">contact@entreprise-messanga.com</a></p>
+        <p>Téléphone : <a href="tel:+237673594489">+237 6 73 59 44 89</a></p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Entreprise MESSANGA - Tous droits réservés</p>
+    <div class="container">
+      <p>&copy; 2025 Entreprise MESSANGA — Tous droits réservés</p>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
